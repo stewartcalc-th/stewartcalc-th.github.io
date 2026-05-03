@@ -2,519 +2,270 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>The Stewart Masterclass | Bilingual Calculus Coaching</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supanut Suntikoon | Premium Math Tutor</title>
     <style>
-        /* CSS Reset & Base Styles */
+        :root {
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #fbbf24; /* Premium Gold */
+            --accent-hover: #f59e0b;
+            --line-green: #00B900;
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
         }
 
         body {
-            background-color: #0a0a0a;
-            color: #f5f5f7;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
             line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
         }
 
-        h1, h2, h3, h4 {
-            font-weight: 600;
-            letter-spacing: -0.02em;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        /* Layout & Containers */
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-
-        section {
-            padding: 100px 0;
-        }
-
-        /* Hero Section */
-        .hero {
-            height: 100vh;
-            min-height: 600px;
+        header {
+            background-color: rgba(15, 23, 42, 0.95);
+            padding: 1.5rem 5%;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #334155;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            text-align: center;
-            background: linear-gradient(180deg, #111111 0%, #0a0a0a 100%);
-            border-bottom: 1px solid #333;
-            padding-top: 40px;
         }
 
-        .hero-tagline {
-            color: #c9a763;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-size: 0.9rem;
-            margin-bottom: 20px;
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .hero {
+            padding: 4rem 5%;
+            text-align: center;
+            background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
         }
 
         .hero h1 {
-            font-size: 4rem;
-            line-height: 1.1;
-            margin-bottom: 24px;
-            color: #ffffff;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
         }
 
         .hero p {
-            font-size: 1.2rem;
-            color: #a1a1a6;
+            font-size: 1.1rem;
+            color: var(--text-muted);
             max-width: 600px;
-            margin-bottom: 40px;
+            margin: 0 auto 2rem;
         }
 
-        /* LINE Buttons */
-        .btn-line {
-            background-color: #06C755;
-            color: #ffffff;
-            padding: 16px 32px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            border: none;
+        .cta-btn {
             display: inline-flex;
             align-items: center;
-            justify-content: center;
-            gap: 12px;
+            gap: 10px;
+            background-color: var(--line-green);
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
             text-decoration: none;
-            width: fit-content;
-        }
-
-        .btn-line.full-width {
-            width: 100%;
-        }
-
-        .btn-line:hover {
-            background-color: #05b34c;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(6, 199, 85, 0.3);
-        }
-
-        /* Philosophy Section */
-        .philosophy-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-        }
-
-        .philosophy-text h2 {
-            font-size: 2.5rem;
-            margin-bottom: 24px;
-        }
-
-        .philosophy-text p {
-            color: #a1a1a6;
+            font-weight: bold;
             font-size: 1.1rem;
-            margin-bottom: 16px;
+            transition: background-color 0.3s;
         }
-        
-        .alert-box {
-            background-color: #1f0b0b;
-            border: 1px solid #4a1919;
-            padding: 24px;
+
+        .cta-btn:hover {
+            background-color: #009900;
+        }
+
+        .cta-btn img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .free-trial {
+            margin-top: 1.5rem;
+            display: inline-block;
+            background-color: rgba(251, 191, 36, 0.1);
+            color: var(--accent);
+            padding: 0.5rem 1rem;
             border-radius: 8px;
-            margin-top: 32px;
+            border: 1px solid var(--accent);
+            font-weight: 600;
         }
 
-        .alert-box h4 {
-            color: #ff6b6b;
-            margin-bottom: 8px;
-            font-size: 1.1rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin: 3rem 0 2rem;
+            color: var(--accent);
         }
 
-        .alert-box p {
-            color: #d1b2b2;
-            font-size: 0.95rem;
-            margin-bottom: 0;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 5%;
         }
 
-        .book-cover-container {
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .card {
+            background-color: var(--bg-card);
             border-radius: 12px;
-            overflow: hidden;
-            border: 1px solid #333;
-            background: #1c1c1e;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            padding: 2rem;
+            border: 1px solid #334155;
+            transition: transform 0.3s, border-color 0.3s;
         }
-        
-        .book-cover-container img {
-            width: 100%;
-            height: auto;
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            border-bottom: 2px solid #334155;
+            padding-bottom: 0.5rem;
+        }
+
+        .price {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: var(--accent);
+            margin-bottom: 1rem;
             display: block;
         }
 
-        /* About Section */
-        .about-section {
-            background-color: #111111;
-            border-top: 1px solid #333;
-        }
-        
-        .about-card {
-            background: #1c1c1e;
-            padding: 40px;
-            border-radius: 12px;
-            border: 1px solid #2c2c2e;
-            max-width: 800px;
-            margin: 0 auto;
+        .topics {
+            list-style-type: none;
         }
 
-        .about-card h3 {
-            font-size: 2rem;
-            color: #ffffff;
-            margin-bottom: 8px;
-        }
-
-        .about-card .title {
-            color: #c9a763;
-            font-size: 1.1rem;
-            margin-bottom: 24px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .about-card ul {
-            list-style: none;
-            color: #a1a1a6;
-            margin-bottom: 24px;
-        }
-
-        .about-card ul li {
-            margin-bottom: 16px;
-            padding-left: 28px;
-            position: relative;
-            font-size: 1.05rem;
-        }
-
-        .about-card ul li::before {
-            content: "💪";
-            position: absolute;
-            left: 0;
-            font-size: 1.1rem;
-        }
-
-        /* Curriculum Section */
-        .curriculum {
-            border-top: 1px solid #333;
-            border-bottom: 1px solid #333;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .section-header h2 {
-            font-size: 2.5rem;
-            margin-bottom: 16px;
-        }
-
-        .section-header p {
-            color: #a1a1a6;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        .phase-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 32px;
-        }
-
-        .phase-card {
-            background: #1c1c1e;
-            padding: 40px;
-            border-radius: 12px;
-            border: 1px solid #2c2c2e;
-        }
-
-        .phase-card h3 {
-            color: #c9a763;
-            margin-bottom: 8px;
-            font-size: 1.4rem;
-        }
-        
-        .phase-card .volume-subtitle {
-            color: #666;
-            font-size: 0.9rem;
-            margin-bottom: 24px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .phase-card ul {
-            list-style: none;
-            color: #a1a1a6;
-        }
-
-        .phase-card ul li {
-            margin-bottom: 12px;
-            padding-left: 20px;
-            position: relative;
-        }
-
-        .phase-card ul li::before {
-            content: "→";
-            position: absolute;
-            left: 0;
-            color: #c9a763;
-        }
-
-        /* Assessment & Pricing Section */
-        .process-pricing {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            align-items: stretch;
-        }
-
-        .assessment-box {
-            background: linear-gradient(135deg, #1c1c1e 0%, #111111 100%);
-            padding: 40px;
-            border-radius: 12px;
-            border: 1px solid #333;
-        }
-
-        .pricing-box {
-            background: #f5f5f7;
-            color: #0a0a0a;
-            padding: 40px;
-            border-radius: 12px;
-            text-align: center;
+        .topics li {
+            margin-bottom: 0.5rem;
+            color: var(--text-muted);
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            align-items: flex-start;
         }
 
-        .pricing-box h3 {
-            font-size: 2rem;
-            margin-bottom: 8px;
+        .topics li::before {
+            content: "▹";
+            color: var(--accent);
+            margin-right: 8px;
         }
 
-        .pricing-box .price {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 24px;
-        }
-
-        .pricing-box .price span {
-            font-size: 1.2rem;
-            font-weight: 400;
-            color: #666;
-        }
-
-        .pricing-box ul {
-            list-style: none;
-            margin-bottom: 32px;
-            text-align: left;
-        }
-
-        .pricing-box ul li {
-            margin-bottom: 12px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 8px;
-        }
-
-        /* Footer */
         footer {
             text-align: center;
-            padding: 40px 24px;
-            color: #666;
-            font-size: 0.9rem;
+            padding: 2rem;
+            background-color: #0b1120;
+            border-top: 1px solid #334155;
+            color: var(--text-muted);
         }
 
-        /* Responsive Mobile Optimization */
         @media (max-width: 768px) {
-            section {
-                padding: 60px 0;
-            }
-            
-            .hero {
-                height: auto;
-                padding-top: 100px;
-                padding-bottom: 60px;
-            }
-
-            .hero h1 {
-                font-size: 2.8rem;
-            }
-
-            .philosophy-grid, .process-pricing {
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
-
-            .section-header h2 {
-                font-size: 2rem;
-            }
-            
-            .book-cover-container {
-                max-width: 400px;
-                margin: 0 auto;
-            }
-            
-            .about-card {
-                padding: 30px 20px;
-            }
-
-            .pricing-box {
-                padding: 30px 20px;
-            }
+            .hero h1 { font-size: 2rem; }
+            .grid { grid-template-columns: 1fr; }
+            header { flex-direction: column; gap: 1rem; }
         }
     </style>
 </head>
 <body>
 
-    <header class="hero">
-        <div class="container">
-            <div class="hero-tagline">Bilingual (Thai-Eng) Calculus Coaching</div>
-            <h1>Master Calculus.<br>Cover to Cover.</h1>
-            <p>An uncompromising, 1-on-1 guided journey from Page 1 to the end of the gold-standard <em>Stewart 9th Edition</em>. Built exclusively for serious independent learners.</p>
-            <a href="https://line.me/ti/p/~supanut_suntikoon" target="_blank" class="btn-line">
-                <img src="LINE_logo.svg" alt="LINE Logo" width="36" height="36">
-                Contact to Apply via LINE
-            </a>
-        </div>
+    <header>
+        <div class="logo">Supanut Suntikoon</div>
+        <a href="https://line.me/ti/p/~supanut_suntikoon" class="cta-btn">
+            <img src="LINE_logo.svg" alt="LINE"> Contact via LINE
+        </a>
     </header>
 
-    <section class="container philosophy-grid">
-        <div class="philosophy-text">
-            <h2>The Calculus Dojo.</h2>
-            <p>I do not offer quick fixes for tomorrow's exam. We do not skip to the "useful" parts. True mathematical mastery requires an unbroken chain of logic.</p>
-            <p>We start at Chapter 1 of James Stewart’s <em>Calculus: Early Transcendentals</em> and progress sequentially to Chapter 16. You will complete curated Stewart Exercise Sets between our sessions. I will act as your guide, correcting your logic and building your foundation in a bilingual (Thai-Eng) environment.</p>
+    <section class="hero">
+        <h1>Premium International Math Tutoring</h1>
+        <p>Mastering IGCSE, A-Level, IB DP, and AP Mathematics. Tailored 1-on-1 online sessions to help you achieve top-tier results and university admissions.</p>
+        <a href="https://line.me/ti/p/~supanut_suntikoon" class="cta-btn">
+            <img src="LINE_logo.svg" alt="LINE"> Book Your Session
+        </a>
+        <br>
+        <div class="free-trial">✨ Exclusive Offer: Free 1-Hour Trial Session for New Students ✨</div>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">Curricula & Rates</h2>
+        <div class="grid">
             
-            <div class="alert-box">
-                <h4>Who This Is NOT For</h4>
-                <p>If you need to cram for an AP exam, pass a university midterm next month, or find shortcuts for a coding bootcamp, <strong>do not apply</strong>. This is a multi-year, elite marathon for dedicated learners only.</p>
-            </div>
-        </div>
-        <div class="book-cover-container">
-            <img src="s-l960.webp" alt="Stewart Calculus 9th Edition Book Cover">
-        </div>
-    </section>
-
-    <section class="about-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>About Your Coach</h2>
-            </div>
-            <div class="about-card">
-                <h3>Supanut Suntikoon</h3>
-                <div class="title">Bilingual Calculus Coach & Lifelong Learner</div>
-                <ul>
-                    <li><strong>The Power of Reps:</strong> I remember how intimidated I was by my first calculus textbook—the dense theories and complex notation. But as someone deeply passionate about fitness, I knew the secret: <em>consistency beats complexity.</em> By putting in the daily mental reps, I taught myself Calculus 1 and 2, earning an "A" in both.</li>
-                    <li><strong>Your Personal Spotter:</strong> I navigated that journey completely alone. I know exactly how frustrating it is to hit a mental wall without a guide. I built this course to be the coach I wish I had when I started—someone to spot you during the heaviest intellectual roadblocks.</li>
-                    <li><strong>Beyond the Syllabus:</strong> Most university courses are forced to skip fascinating, crucial chapters simply because a standard semester is too short. I designed this curriculum specifically to ignore those limits and pursue pure, unskipped mastery.</li>
-                </ul>
-                <p style="color: #a1a1a6;">When you focus on genuine understanding and consistent daily effort, passing exams becomes trivial. <strong>Your university grades will just be a natural byproduct of our real goal: total mastery.</strong> Whether you are grinding through a physical workout or solving complex integrals, the process is exactly the same. I'm here to be your go-to guy, bringing that athletic grind to the Calculus Dojo so we can build your mathematical strength from the ground up.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="curriculum">
-        <div class="container">
-            <div class="section-header">
-                <h2>The Unbroken Journey</h2>
-                <p>We start at Chapter 1. We do not skip. Because this is a marathon, we celebrate true mastery by breaking the text into three major developmental Volumes.</p>
-            </div>
-
-            <div class="phase-grid">
-                <div class="phase-card">
-                    <h3>Volume I: The Foundation</h3>
-                    <div class="volume-subtitle">Single Variable Mastery</div>
-                    <ul>
-                        <li>Ch 1: Functions and Models</li>
-                        <li>Ch 2: Limits and Derivatives</li>
-                        <li>Ch 3: Differentiation Rules</li>
-                        <li>Ch 4: Applications of Differentiation</li>
-                        <li>Ch 5: Integrals</li>
-                        <li>Ch 6: Applications of Integration</li>
-                    </ul>
-                </div>
-                <div class="phase-card">
-                    <h3>Volume II: The Deep Math</h3>
-                    <div class="volume-subtitle">Advanced Techniques</div>
-                    <ul>
-                        <li>Ch 7: Techniques of Integration</li>
-                        <li>Ch 8: Further Applications</li>
-                        <li>Ch 9: Differential Equations (Intro)</li>
-                        <li>Ch 10: Parametric Eq. & Polar Coordinates</li>
-                        <li>Ch 11: Sequences, Series, & Power Series</li>
-                    </ul>
-                </div>
-                <div class="phase-card">
-                    <h3>Volume III: The Multidimensional</h3>
-                    <div class="volume-subtitle">Vectors & Space</div>
-                    <ul>
-                        <li>Ch 12: Vectors & Geometry of Space</li>
-                        <li>Ch 13: Vector Functions</li>
-                        <li>Ch 14: Partial Derivatives</li>
-                        <li>Ch 15: Multiple Integrals</li>
-                        <li>Ch 16: Vector Calculus</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="container" id="apply">
-        <div class="section-header">
-            <h2>The Coaching Program</h2>
-        </div>
-        
-        <div class="process-pricing">
-            <div class="assessment-box">
-                <h3 style="color: #c9a763; margin-bottom: 16px; font-size: 1.5rem;">Step 1: The Alignment Check (Free)</h3>
-                <p style="color: #a1a1a6; margin-bottom: 24px;">Before we begin, we schedule a mandatory 60-minute Zoom session. This is not a tutoring session; it is a strategy call to ensure you are ready for the marathon.</p>
-                <ul style="color: #a1a1a6; list-style: none; padding: 0;">
-                    <li style="margin-bottom: 12px;">✓ Assess your Pre-Calculus baseline (Algebra & Trig).</li>
-                    <li style="margin-bottom: 12px;">✓ Define your long-term mastery goals.</li>
-                    <li style="margin-bottom: 12px;">✓ Confirm your commitment to the cover-to-cover journey.</li>
-                    <li style="margin-bottom: 12px;">✓ Ensure our coaching styles align.</li>
+            <!-- IGCSE Card -->
+            <div class="card">
+                <h2>🇬🇧 IGCSE Mathematics</h2>
+                <span class="price">1,500 THB / Hour</span>
+                <p style="margin-bottom: 1rem; font-size: 0.9rem;">Edexcel & Cambridge (Core & Extended)</p>
+                <ul class="topics">
+                    <li>Numbers & Algebra</li>
+                    <li>Coordinate & Solid Geometry</li>
+                    <li>Mensuration & Trigonometry</li>
+                    <li>Matrices & Transformations</li>
+                    <li>Probability & Statistics</li>
+                    <li>Past Paper Drilling & Exam Technique</li>
                 </ul>
             </div>
 
-            <div class="pricing-box">
-                <h3>The Dojo Retainer</h3>
-                <div class="price">12,000 <span>THB / month</span></div>
-                <ul>
-                    <li><strong>Two 90-Minute Live Sessions</strong> per week via Zoom.</li>
-                    <li><strong>Curated Stewart Exercise Sets</strong> assigned & reviewed.</li>
-                    <li><strong>Exported PDF Notes</strong> after every single session.</li>
-                    <li><strong>Priority Asynchronous Support</strong> via LINE.</li>
+            <!-- A-Level Card -->
+            <div class="card">
+                <h2>🇬🇧 A-Level Mathematics</h2>
+                <span class="price">2,000 THB / Hour</span>
+                <p style="margin-bottom: 1rem; font-size: 0.9rem;">Pure Mathematics, Mechanics & Statistics</p>
+                <ul class="topics">
+                    <li>Algebra, Functions & Series</li>
+                    <li>Advanced Calculus (Differentiation & Integration)</li>
+                    <li>Exponentials, Logarithms & Vectors</li>
+                    <li>Kinematics, Forces & Newton's Laws</li>
+                    <li>Statistical Distributions & Hypothesis Testing</li>
                 </ul>
-                <a href="https://line.me/ti/p/~supanut_suntikoon" target="_blank" class="btn-line full-width">
-                    <img src="LINE_logo.svg" alt="LINE Logo" width="36" height="36">
-                    Apply via LINE (supanut_suntikoon)
-                </a>
             </div>
+
+            <!-- IB DP Card -->
+            <div class="card">
+                <h2>🌐 IB DP Mathematics</h2>
+                <span class="price">2,500 THB / Hour</span>
+                <p style="margin-bottom: 1rem; font-size: 0.9rem;">Analysis & Approaches (AA) / Applications & Interpretation (AI) — HL & SL</p>
+                <ul class="topics">
+                    <li>Number & Algebra</li>
+                    <li>Functions, Geometry & Trigonometry</li>
+                    <li>Advanced Statistics & Probability</li>
+                    <li>Calculus (Limits, Integration, Differential Equations)</li>
+                    <li><strong>Internal Assessment (IA) Guidance & Review</strong></li>
+                </ul>
+            </div>
+
+            <!-- AP / SAT Card -->
+            <div class="card">
+                <h2>🇺🇸 AP Calculus & SAT</h2>
+                <span class="price">2,000 THB / Hour</span>
+                <p style="margin-bottom: 1rem; font-size: 0.9rem;">AP Calculus AB/BC, AP Stats & Digital SAT</p>
+                <ul class="topics">
+                    <li><strong>AP Calc:</strong> Limits, Derivatives, Integrals, Series</li>
+                    <li><strong>AP Stats:</strong> Data Analysis, Experimental Design, Inference</li>
+                    <li><strong>SAT Math:</strong> Heart of Algebra, Problem Solving, Advanced Math</li>
+                    <li>TI-84 / TI-Nspire Calculator Strategies</li>
+                </ul>
+            </div>
+
         </div>
-    </section>
+    </div>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2026 Supanut Suntikoon | Bilingual Calculus Coaching | Chiang Mai, Thailand</p>
-        </div>
+        <h2>Supanut Suntikoon</h2>
+        <p>Expert Math Tutor | Bangkok, Thailand (Online Global)</p>
+        <p style="margin-top: 1rem;">
+            <a href="https://line.me/ti/p/~supanut_suntikoon" style="color: var(--accent); text-decoration: none;">LINE ID: supanut_suntikoon</a>
+        </p>
     </footer>
 
 </body>
