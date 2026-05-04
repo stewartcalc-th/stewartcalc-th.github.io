@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <meta name="theme-color" content="#000000">
-    <title>Supanut | Premium Math</title>
+    <title>ติวแคลคูลัส | Stewart Calc 9th Ed.</title>
     <style>
         :root {
             --bg-pure-black: #000000;
@@ -12,7 +12,7 @@
             --bg-surface-light: #141414;
             --text-primary: #ffffff;
             --text-secondary: #888888;
-            --accent-gold: #d4af37;
+            --accent-blue: #4fa4ff; /* Changed to a mathematical, academic blue */
             --line-green: #06c755;
             --border-subtle: #222222;
             --app-max-width: 480px;
@@ -32,7 +32,7 @@
             display: flex;
             justify-content: center;
             height: 100vh;
-            height: 100dvh; /* For mobile browser dynamic toolbars */
+            height: 100dvh;
             overflow: hidden;
         }
 
@@ -68,10 +68,11 @@
         }
 
         .top-bar span {
-            color: var(--accent-gold);
+            color: var(--accent-blue);
             font-size: 0.8rem;
             text-transform: uppercase;
             letter-spacing: 2px;
+            font-weight: bold;
         }
 
         /* --- Main Content Area --- */
@@ -79,10 +80,9 @@
             flex: 1;
             overflow-y: auto;
             scroll-behavior: smooth;
-            padding-bottom: 80px; /* Space for bottom nav */
+            padding-bottom: 80px;
         }
 
-        /* Hide scrollbar for sleekness */
         .main-content::-webkit-scrollbar {
             display: none;
         }
@@ -122,7 +122,7 @@
         }
 
         .highlight {
-            color: var(--accent-gold);
+            color: var(--accent-blue);
         }
 
         .btn {
@@ -154,14 +154,14 @@
         /* --- Home View --- */
         .hero-badge {
             display: inline-block;
-            background: rgba(212, 175, 55, 0.1);
-            color: var(--accent-gold);
+            background: rgba(79, 164, 255, 0.1);
+            color: var(--accent-blue);
             padding: 6px 12px;
             border-radius: 20px;
             font-size: 0.8rem;
             font-weight: 600;
             margin-bottom: 16px;
-            border: 1px solid rgba(212, 175, 55, 0.3);
+            border: 1px solid rgba(79, 164, 255, 0.3);
         }
 
         .stats-grid {
@@ -180,13 +180,16 @@
         }
 
         .stat-box h3 {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             margin-bottom: 4px;
+            color: var(--text-primary);
         }
 
         .stat-box p {
             margin: 0;
             font-size: 0.75rem;
+            color: var(--accent-blue);
+            font-weight: 600;
         }
 
         /* --- About View --- */
@@ -200,12 +203,13 @@
             height: 120px;
             border-radius: 50%;
             object-fit: cover;
-            border: 2px solid var(--accent-gold);
+            border: 2px solid var(--accent-blue);
             margin-bottom: 16px;
+            background-color: #111;
         }
 
         .quote-box {
-            border-left: 3px solid var(--accent-gold);
+            border-left: 3px solid var(--accent-blue);
             padding-left: 16px;
             margin: 24px 0;
             font-style: italic;
@@ -219,7 +223,7 @@
         }
 
         .list-icon {
-            color: var(--accent-gold);
+            color: var(--accent-blue);
             font-size: 1.2rem;
             line-height: 1;
         }
@@ -256,7 +260,7 @@
         }
 
         .accordion-price {
-            color: var(--accent-gold);
+            color: var(--accent-blue);
             font-size: 0.9rem;
             font-weight: bold;
         }
@@ -283,7 +287,7 @@
 
         .accordion-content li::before {
             content: "•";
-            color: var(--accent-gold);
+            color: var(--accent-blue);
         }
 
         /* --- Bottom Navigation --- */
@@ -296,7 +300,7 @@
             background-color: rgba(10, 10, 10, 0.95);
             backdrop-filter: blur(10px);
             border-top: 1px solid var(--border-subtle);
-            padding-bottom: env(safe-area-inset-bottom); /* iOS safe area */
+            padding-bottom: env(safe-area-inset-bottom);
         }
 
         .nav-item {
@@ -322,7 +326,7 @@
         }
 
         .nav-item.active {
-            color: var(--accent-gold);
+            color: var(--accent-blue);
         }
     </style>
 </head>
@@ -331,141 +335,114 @@
     <div class="app-container">
         
         <header class="top-bar">
-            <h1>S. SUNTIKOON</h1>
-            <span>Premium Tutor</span>
+            <h1>STEWART CALC</h1>
+            <span>9th Ed. Specialist</span>
         </header>
 
         <main class="main-content">
             
             <section id="view-home" class="view-section active">
-                <div class="hero-badge">✨ Free 1-Hour Trial</div>
-                <h2>Premium Math Mastery</h2>
-                <p>Specialized 1-on-1 online tutoring designed to elevate your understanding, conquer your exams, and secure your university admissions.</p>
+                <div class="hero-badge">🇹🇭 อธิบายแคลภาษาอังกฤษให้เป็นไทยง่ายๆ</div>
+                <h2>Hacking the Stewart 9th Edition</h2>
+                <p>Specialized 1-on-1 bilingual online tutoring designed to decode dense English math jargon and secure your A in University Calculus or AP exams.</p>
                 
                 <div class="stats-grid">
                     <div class="stat-box">
                         <h3>100%</h3>
-                        <p>Personalized</p>
+                        <p>Stewart Focused</p>
                     </div>
                     <div class="stat-box">
-                        <h3>24/7</h3>
-                        <p>LINE Support</p>
+                        <h3>TH / EN</h3>
+                        <p>Bilingual Instruction</p>
                     </div>
                 </div>
 
-                <a href="https://line.me/ti/p/~supanut_suntikoon" class="btn btn-line">
-                    <img src="LINE_logo.svg" alt="LINE" style="width: 24px; height: 24px;">
+                <a href="https://line.me/ti/p/~YOUR_LINE_ID" class="btn btn-line">
+                    <svg viewBox="0 0 24 24" width="24" height="24" style="fill: white; margin-right: 5px;"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.121.303.079.778.039 1.085l-.171 1.027c-.053.303-.242 1.186 1.039.647 1.281-.54 6.911-4.069 9.428-6.967 1.739-1.907 2.572-3.843 2.572-5.992zm-15.278 2.058h-2.651c-.328 0-.594-.266-.594-.594V7.525c0-.328.266-.594.594-.594h2.651c.328 0 .594.266.594.594v3.649c0 .328-.266.594-.594.594zm4.721 0h-2.651c-.328 0-.594-.266-.594-.594V7.525c0-.328.266-.594.594-.594h2.651c.328 0 .594.266.594.594v3.649c0 .328-.266.594-.594.594zm3.957-.594c0 .328-.266.594-.594.594h-3.61c-.328 0-.594-.266-.594-.594V7.525c0-.328.266-.594.594-.594h1.002c.328 0 .594.266.594.594v3.055h2.008c.328 0 .594.266.594.594v.594zm3.43-3.055v3.055c0 .328-.266.594-.594.594h-1.002c-.328 0-.594-.266-.594-.594V7.525c0-.328.266-.594.594-.594h1.002c.328 0 .594.266.594.594v1.365l1.635-1.745c.189-.202.483-.266.736-.153.253.113.415.356.415.632v3.649c0 .328-.266.594-.594.594h-1.002c-.328 0-.594-.266-.594-.594v-1.442l-1.054 1.134z"/></svg>
                     Book Your Session
                 </a>
             </section>
 
             <section id="view-about" class="view-section">
                 <div class="profile-container">
-                    <img src="1777833957433.webp" alt="Supanut Suntikoon" class="profile-img" onerror="this.src='https://ui-avatars.com/api/?name=S+S&background=d4af37&color=000&size=150'">
-                    <h2>Supanut Suntikoon</h2>
+                    <img src="https://ui-avatars.com/api/?name=%E2%88%AB&background=4fa4ff&color=fff&size=150&font-size=0.6" alt="Stewart Calc TH" class="profile-img">
+                    <h2>Stewart Calc Tutor</h2>
                     <p style="margin-bottom: 0;">Bilingual Instructor (Thai/Eng)</p>
                 </div>
 
                 <div class="quote-box">
-                    <p style="margin: 0; color: #fff;">"My core philosophy centers on moving from <strong class="highlight">i to i + 1</strong>. No matter your baseline, we take the next crucial step forward."</p>
+                    <p style="margin: 0; color: #fff;">"The Stewart textbook isn't hard because of the math. It's hard because of how the English is structured. I translate the <strong class="highlight">jargon into logic</strong>."</p>
                 </div>
 
-                <h3 style="margin: 24px 0 12px; font-size: 1.1rem;">Academic Background</h3>
+                <h3 style="margin: 24px 0 12px; font-size: 1.1rem;">Why Choose Me?</h3>
                 <div class="list-item">
-                    <span class="list-icon">🎓</span>
+                    <span class="list-icon">🎯</span>
                     <div>
-                        <span style="display:block; font-weight: 600; font-size: 0.9rem;">Chiang Mai University</span>
-                        <span style="font-size: 0.8rem; color: var(--text-secondary);">B.S. Chemistry, M.S. Geology, Ph.D. Env. Science</span>
+                        <span style="display:block; font-weight: 600; font-size: 0.9rem;">The "Early Transcendentals" Expert</span>
+                        <span style="font-size: 0.8rem; color: var(--text-secondary);">I know exactly which margin warnings and concept checks your professors use for exam questions.</span>
                     </div>
                 </div>
                 <div class="list-item">
-                    <span class="list-icon">🎓</span>
+                    <span class="list-icon">🌐</span>
                     <div>
-                        <span style="display:block; font-weight: 600; font-size: 0.9rem;">University of Montana</span>
-                        <span style="font-size: 0.8rem; color: var(--text-secondary);">Ph.D. Geosciences (Dropped Out)</span>
+                        <span style="display:block; font-weight: 600; font-size: 0.9rem;">Bridging the Language Gap</span>
+                        <span style="font-size: 0.8rem; color: var(--text-secondary);">Perfect for Thai students in Inter programs (MUIC, ISE, TEPE) or studying abroad (US/UK/CA).</span>
                     </div>
                 </div>
 
-                <h3 style="margin: 24px 0 12px; font-size: 1.1rem;">Beyond The Numbers</h3>
-                <p>Discipline in the mind requires discipline in the body. Focused on physical mastery through Calisthenics, B-Boying, and Functional Strength Training.</p>
+                <h3 style="margin: 24px 0 12px; font-size: 1.1rem;">Setup</h3>
+                <p>All sessions are conducted live via Zoom with a high-fidelity digital whiteboard, utilizing screen-grabs directly from the Stewart 9th Edition PDF for real-time problem solving.</p>
             </section>
 
             <section id="view-courses" class="view-section">
-                <h2>Curricula & Rates</h2>
-                <p>Select a program below to view topics and pricing.</p>
+                <h2>Packages & Rates</h2>
+                <p>Select a program designed to match your immediate academic urgency.</p>
 
                 <div class="accordion">
                     
                     <div class="accordion-item">
                         <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <div class="accordion-title">🇬🇧 IGCSE Math</div>
-                            <div class="accordion-price">600 THB/hr</div>
+                            <div class="accordion-title">🚨 The "Midterm Rescue"</div>
+                            <div class="accordion-price">Inquire via DM</div>
                         </div>
                         <div class="accordion-content">
-                            <p style="margin-top: 10px; font-size: 0.8rem;">Edexcel & Cambridge (Core & Extended)</p>
+                            <p style="margin-top: 10px; font-size: 0.8rem;">University freshmen who just failed their first Calc I/II quiz.</p>
                             <ul>
-                                <li>Number Systems, Percentages & Ratios</li>
-                                <li>Algebraic Manipulation & Quadratics</li>
-                                <li>Functions, Graphs & Inequalities</li>
-                                <li>Coordinate Geometry & Circle Theorems</li>
-                                <li>Trigonometry & Mensuration</li>
-                                <li>Vectors & Transformations</li>
-                                <li>Probability & Statistical Diagrams</li>
+                                <li>4 intensive, high-urgency sessions.</li>
+                                <li>Focus purely on exact Stewart chapters for your upcoming exam.</li>
+                                <li>Mock tests using Stewart's chapter reviews.</li>
+                                <li>Emergency room care for your GPA.</li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="accordion-item">
                         <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <div class="accordion-title">🇬🇧 A-Level Math</div>
-                            <div class="accordion-price">800 THB/hr</div>
+                            <div class="accordion-title">🎯 The "AP 5 Blueprint"</div>
+                            <div class="accordion-price">Inquire via DM</div>
                         </div>
                         <div class="accordion-content">
-                            <p style="margin-top: 10px; font-size: 0.8rem;">Pure Mathematics, Mechanics & Statistics</p>
+                            <p style="margin-top: 10px; font-size: 0.8rem;">International high school students taking AP Calculus AB/BC.</p>
                             <ul>
-                                <li>Advanced Algebra & Partial Fractions</li>
-                                <li>Trigonometric Identities & Equations</li>
-                                <li>Calculus: Chain/Product/Quotient Rules</li>
-                                <li>Integration & Differential Equations</li>
-                                <li>Mechanics: Kinematics, Forces & Moments</li>
-                                <li>Statistics: Normal/Binomial & Hypothesis</li>
+                                <li>Weekly sessions mirroring your school's syllabus.</li>
+                                <li>Steady progression through Stewart Chapters 1-11.</li>
+                                <li>Focus on Tier 2 & Tier 3 textbook problems.</li>
+                                <li>Long-term stability leading up to May AP exams.</li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="accordion-item">
                         <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <div class="accordion-title">🌐 IB DP Math</div>
-                            <div class="accordion-price">1,000 THB/hr</div>
+                            <div class="accordion-title">💎 VIP Homework Lifeline</div>
+                            <div class="accordion-price">Inquire via DM</div>
                         </div>
                         <div class="accordion-content">
-                            <p style="margin-top: 10px; font-size: 0.8rem;">AA & AI — Higher Level (HL) & Standard Level (SL)</p>
+                            <p style="margin-top: 10px; font-size: 0.8rem;">Ultimate convenience for students in different time zones.</p>
                             <ul>
-                                <li>Advanced Functions & Complex Numbers</li>
-                                <li>Proof by Induction & Maclaurin Series</li>
-                                <li>Graph Theory & Voronoi Diagrams</li>
-                                <li>Vector Kinematics & Transformations</li>
-                                <li>Advanced Statistics & Calculus</li>
-                                <li>Internal Assessment (IA) Guidance</li>
-                                <li>GDC (Graphing Calculator) Optimization</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <div class="accordion-title">🇺🇸 AP & SAT</div>
-                            <div class="accordion-price">800 THB/hr</div>
-                        </div>
-                        <div class="accordion-content">
-                            <p style="margin-top: 10px; font-size: 0.8rem;">AP Calc AB/BC, AP Stats & Digital SAT</p>
-                            <ul>
-                                <li>AP Calc: Limits, Derivatives & Integrals</li>
-                                <li>AP Calc BC: Parametric, Polar & Taylor Series</li>
-                                <li>AP Stats: Experimental Design & Inference</li>
-                                <li>Digital SAT: Heart of Algebra</li>
-                                <li>Digital SAT: Problem Solving & Data Analysis</li>
-                                <li>Desmos Integration & Pacing Strategies</li>
+                                <li>1 live digital whiteboard session per week.</li>
+                                <li>Asynchronous Q&A support via LINE.</li>
+                                <li>Send photos of stuck Stewart problems during the week for guided hints.</li>
                             </ul>
                         </div>
                     </div>
@@ -486,7 +463,7 @@
             </div>
             <div class="nav-item" onclick="switchTab('view-courses', this)">
                 <svg viewBox="0 0 24 24"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"/></svg>
-                Curricula
+                Packages
             </div>
         </nav>
 
@@ -495,7 +472,6 @@
     <script>
         // Tab Switching Logic
         function switchTab(viewId, element) {
-            // Remove active class from all views and nav items
             document.querySelectorAll('.view-section').forEach(view => {
                 view.classList.remove('active');
             });
@@ -503,25 +479,20 @@
                 nav.classList.remove('active');
             });
 
-            // Add active class to selected view and nav item
             document.getElementById(viewId).classList.add('active');
             element.classList.add('active');
-
-            // Scroll to top of main content
             document.querySelector('.main-content').scrollTop = 0;
         }
 
-        // Accordion Logic for Curricula
+        // Accordion Logic
         function toggleAccordion(element) {
             const content = element.nextElementSibling;
             const isOpen = content.style.display === 'block';
             
-            // Close all other accordions (Optional: remove if you want multiple open at once)
             document.querySelectorAll('.accordion-content').forEach(acc => {
                 acc.style.display = 'none';
             });
 
-            // Toggle selected accordion
             if (!isOpen) {
                 content.style.display = 'block';
             }
