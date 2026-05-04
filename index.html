@@ -277,12 +277,14 @@
             display: flex;
             align-items: center;
             gap: 10px;
+            line-height: 1.3;
         }
 
         .accordion-price {
             color: var(--accent-blue);
             font-size: 0.9rem;
             font-weight: bold;
+            white-space: nowrap;
         }
 
         .accordion-content {
@@ -303,6 +305,7 @@
             margin-bottom: 8px;
             display: flex;
             gap: 8px;
+            line-height: 1.4;
         }
 
         .accordion-content li::before {
@@ -332,15 +335,15 @@
             padding: 12px 0;
             color: var(--text-secondary);
             text-decoration: none;
-            font-size: 0.7rem;
+            font-size: 0.65rem;
             font-weight: 500;
             cursor: pointer;
             transition: color 0.2s;
         }
 
         .nav-item svg {
-            width: 24px;
-            height: 24px;
+            width: 22px;
+            height: 22px;
             margin-bottom: 4px;
             fill: currentColor;
         }
@@ -436,6 +439,308 @@
                 <h3 style="margin: 24px 0 12px; font-size: 1.1rem;">Beyond The Numbers</h3>
                 <p>Discipline in the mind requires discipline in the body. I focus heavily on physical mastery through Calisthenics, B-Boying, and Functional Strength Training. Why does this matter for math?</p>
                 <p>Because high-level calculus requires mental endurance and a high frustration tolerance. I bring the concept of "progressive overload" from physical training directly into our math sessions—systematically building your analytical endurance so you don't panic or burn out during a 3-hour marathon final exam.</p>
+            </section>
+
+            <section id="view-syllabus" class="view-section">
+                <h2>The Gold Standard</h2>
+                <p>James Stewart’s <i>Calculus: Early Transcendentals</i> is universally recognized as the <strong>gold standard</strong> for AP and University calculus. Top global institutions adopt it for its flawless mathematical rigor paired with clear, tiered problem sets that seamlessly connect abstract theory to real-world physics, engineering, and economics applications.</p>
+                <p>Below is the complete 9th Edition syllabus we will conquer together:</p>
+
+                <div class="accordion">
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title">Chapter 1: Functions and Models</div>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>1.1 Four Ways to Represent a Function</li>
+                                <li>1.2 Mathematical Models: A Catalog of Essential Functions</li>
+                                <li>1.3 New Functions from Old Functions</li>
+                                <li>1.4 Exponential Functions</li>
+                                <li>1.5 Inverse Functions and Logarithms</li>
+                                <li>Review & Principles of Problem Solving</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title">Chapter 2: Limits and Derivatives</div>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>2.1 The Tangent and Velocity Problems</li>
+                                <li>2.2 The Limit of a Function</li>
+                                <li>2.3 Calculating Limits Using the Limit Laws</li>
+                                <li>2.4 The Precise Definition of a Limit</li>
+                                <li>2.5 Continuity</li>
+                                <li>2.6 Limits at Infinity; Horizontal Asymptotes</li>
+                                <li>2.7 Derivatives and Rates of Change</li>
+                                <li>2.8 The Derivative as a Function</li>
+                                <li>Review & Problems Plus</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title">Chapter 3: Differentiation Rules</div>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>3.1 Derivatives of Polynomials and Exponential Functions</li>
+                                <li>3.2 The Product and Quotient Rules</li>
+                                <li>3.3 Derivatives of Trigonometric Functions</li>
+                                <li>3.4 The Chain Rule</li>
+                                <li>3.5 Implicit Differentiation</li>
+                                <li>3.6 Derivatives of Logarithmic and Inverse Trigonometric Functions</li>
+                                <li>3.7 Rates of Change in the Natural and Social Sciences</li>
+                                <li>3.8 Exponential Growth and Decay</li>
+                                <li>3.9 Related Rates</li>
+                                <li>3.10 Linear Approximations and Differentials</li>
+                                <li>3.11 Hyperbolic Functions</li>
+                                <li>Review & Problems Plus</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title">Chapter 4: Applications of Differentiation</div>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>4.1 Maximum and Minimum Values</li>
+                                <li>4.2 The Mean Value Theorem</li>
+                                <li>4.3 What Derivatives Tell Us about the Shape of a Graph</li>
+                                <li>4.4 Indeterminate Forms and l’Hospital’s Rule</li>
+                                <li>4.5 Summary of Curve Sketching</li>
+                                <li>4.6 Graphing with Calculus and Technology</li>
+                                <li>4.7 Optimization Problems</li>
+                                <li>4.8 Newton’s Method</li>
+                                <li>4.9 Antiderivatives</li>
+                                <li>Review & Problems Plus</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title">Chapter 5: Integrals</div>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>5.1 The Area and Distance Problems</li>
+                                <li>5.2 The Definite Integral</li>
+                                <li>5.3 The Fundamental Theorem of Calculus</li>
+                                <li>5.4 Indefinite Integrals and the Net Change Theorem</li>
+                                <li>5.5 The Substitution Rule</li>
+                                <li>Review & Problems Plus</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title">Chapter 6: Applications of Integration</div>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>6.1 Areas Between Curves</li>
+                                <li>6.2 Volumes</li>
+                                <li>6.3 Volumes by Cylindrical Shells</li>
+                                <li>6.4 Work</li>
+                                <li>6.5 Average Value of a Function</li>
+                                <li>Review & Problems Plus</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title">Chapter 7: Techniques of Integration</div>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>7.1 Integration by Parts</li>
+                                <li>7.2 Trigonometric Integrals</li>
+                                <li>7.3 Trigonometric Substitution</li>
+                                <li>7.4 Integration of Rational Functions by Partial Fractions</li>
+                                <li>7.5 Strategy for Integration</li>
+                                <li>7.6 Integration Using Tables and Technology</li>
+                                <li>7.7 Approximate Integration</li>
+                                <li>7.8 Improper Integrals</li>
+                                <li>Review & Problems Plus</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title">Chapter 8: Further Applications of Integration</div>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>8.1 Arc Length</li>
+                                <li>8.2 Area of a Surface of Revolution</li>
+                                <li>8.3 Applications to Physics and Engineering</li>
+                                <li>8.4 Applications to Economics and Biology</li>
+                                <li>8.5 Probability</li>
+                                <li>Review & Problems Plus</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title">Chapter 9: Differential Equations</div>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>9.1 Modeling with Differential Equations</li>
+                                <li>9.2 Direction Fields and Euler’s Method</li>
+                                <li>9.3 Separable Equations</li>
+                                <li>9.4 Models for Population Growth</li>
+                                <li>9.5 Linear Equations</li>
+                                <li>9.6 Predator-Prey Systems</li>
+                                <li>Review & Problems Plus</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title">Chapter 10: Parametric Equations & Polar Coordinates</div>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>10.1 Curves Defined by Parametric Equations</li>
+                                <li>10.2 Calculus with Parametric Curves</li>
+                                <li>10.3 Polar Coordinates</li>
+                                <li>10.4 Calculus in Polar Coordinates</li>
+                                <li>10.5 Conic Sections</li>
+                                <li>10.6 Conic Sections in Polar Coordinates</li>
+                                <li>Review & Problems Plus</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title">Chapter 11: Sequences, Series, and Power Series</div>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>11.1 Sequences</li>
+                                <li>11.2 Series</li>
+                                <li>11.3 The Integral Test and Estimates of Sums</li>
+                                <li>11.4 The Comparison Tests</li>
+                                <li>11.5 Alternating Series and Absolute Convergence</li>
+                                <li>11.6 The Ratio and Root Tests</li>
+                                <li>11.7 Strategy for Testing Series</li>
+                                <li>11.8 Power Series</li>
+                                <li>11.9 Representations of Functions as Power Series</li>
+                                <li>11.10 Taylor and Maclaurin Series</li>
+                                <li>11.11 Applications of Taylor Polynomials</li>
+                                <li>Review & Problems Plus</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title">Chapter 12: Vectors and the Geometry of Space</div>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>12.1 Three-Dimensional Coordinate Systems</li>
+                                <li>12.2 Vectors</li>
+                                <li>12.3 The Dot Product</li>
+                                <li>12.4 The Cross Product</li>
+                                <li>12.5 Equations of Lines and Planes</li>
+                                <li>12.6 Cylinders and Quadric Surfaces</li>
+                                <li>Review & Problems Plus</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title">Chapter 13: Vector Functions</div>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>13.1 Vector Functions and Space Curves</li>
+                                <li>13.2 Derivatives and Integrals of Vector Functions</li>
+                                <li>13.3 Arc Length and Curvature</li>
+                                <li>13.4 Motion in Space: Velocity and Acceleration</li>
+                                <li>Review & Problems Plus</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title">Chapter 14: Partial Derivatives</div>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>14.1 Functions of Several Variables</li>
+                                <li>14.2 Limits and Continuity</li>
+                                <li>14.3 Partial Derivatives</li>
+                                <li>14.4 Tangent Planes and Linear Approximations</li>
+                                <li>14.5 The Chain Rule</li>
+                                <li>14.6 Directional Derivatives and the Gradient Vector</li>
+                                <li>14.7 Maximum and Minimum Values</li>
+                                <li>14.8 Lagrange Multipliers</li>
+                                <li>Review & Problems Plus</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title">Chapter 15: Multiple Integrals</div>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>15.1 Double Integrals over Rectangles</li>
+                                <li>15.2 Double Integrals over General Regions</li>
+                                <li>15.3 Double Integrals in Polar Coordinates</li>
+                                <li>15.4 Applications of Double Integrals</li>
+                                <li>15.5 Surface Area</li>
+                                <li>15.6 Triple Integrals</li>
+                                <li>15.7 Triple Integrals in Cylindrical Coordinates</li>
+                                <li>15.8 Triple Integrals in Spherical Coordinates</li>
+                                <li>15.9 Change of Variables in Multiple Integrals</li>
+                                <li>Review & Problems Plus</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title">Chapter 16: Vector Calculus</div>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>16.1 Vector Fields</li>
+                                <li>16.2 Line Integrals</li>
+                                <li>16.3 The Fundamental Theorem for Line Integrals</li>
+                                <li>16.4 Green’s Theorem</li>
+                                <li>16.5 Curl and Divergence</li>
+                                <li>16.6 Parametric Surfaces and Their Areas</li>
+                                <li>16.7 Surface Integrals</li>
+                                <li>16.8 Stokes’ Theorem</li>
+                                <li>16.9 The Divergence Theorem</li>
+                                <li>16.10 Summary</li>
+                                <li>Review & Problems Plus</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
             </section>
 
             <section id="view-courses" class="view-section">
@@ -536,6 +841,10 @@
             <div class="nav-item" onclick="switchTab('view-about', this)">
                 <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
                 Tutor
+            </div>
+            <div class="nav-item" onclick="switchTab('view-syllabus', this)">
+                <svg viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+                Syllabus
             </div>
             <div class="nav-item" onclick="switchTab('view-courses', this)">
                 <svg viewBox="0 0 24 24"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"/></svg>
