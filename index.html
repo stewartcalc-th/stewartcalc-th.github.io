@@ -191,6 +191,26 @@
             color: var(--accent-blue);
             font-weight: 600;
         }
+        
+        .feature-list {
+            list-style: none;
+            margin-bottom: 24px;
+        }
+        
+        .feature-list li {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+        }
+        
+        .feature-list li::before {
+            content: "✓";
+            color: var(--accent-blue);
+            font-weight: bold;
+        }
 
         /* --- About View --- */
         .profile-container {
@@ -355,11 +375,31 @@
                         <h3>TH / EN</h3>
                         <p>Bilingual Instruction</p>
                     </div>
+                    <div class="stat-box">
+                        <h3>1-on-1</h3>
+                        <p>Personalized Pace</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>24/7</h3>
+                        <p>LINE Support</p>
+                    </div>
                 </div>
+
+                <h3 style="margin: 24px 0 12px; font-size: 1.1rem;">Why Students Struggle With Stewart</h3>
+                <p>The math isn't the problem—the presentation is. Stewart's textbook is notorious for dense theorem proofs, skipping algebraic steps in examples, and confusing English jargon that leaves non-native speakers behind.</p>
+                <p>I act as your translator. I turn complex blue warning boxes and dense integration techniques into straightforward, bite-sized logic explained in clear Thai.</p>
+
+                <h3 style="margin: 24px 0 12px; font-size: 1.1rem;">What We Will Achieve Together</h3>
+                <ul class="feature-list">
+                    <li>Master the exact "Concept Checks" your professors love to pull for midterm exams.</li>
+                    <li>Conquer Tier 2 (Optimization/Related Rates) and Tier 3 applied textbook problems.</li>
+                    <li>Eliminate the language barrier holding back your GPA in international programs (MUIC, ISE, TEPE) or abroad.</li>
+                    <li>Start with a free 30-minute diagnostic session to map out your exact roadmap to success.</li>
+                </ul>
 
                 <a href="https://line.me/ti/p/~supanut_suntikoon" class="btn btn-line">
                     <img src="LINE_logo.svg" alt="LINE" style="width: 24px; height: 24px; margin-right: 5px;">
-                    Book Your Session
+                    Book Free Assessment
                 </a>
             </section>
 
@@ -371,8 +411,11 @@
                 </div>
 
                 <div class="quote-box">
-                    <p style="margin: 0; color: #fff;">"The Stewart textbook isn't hard because of the math. It's hard because of how the English is structured. I translate the <strong class="highlight">jargon into logic</strong>."</p>
+                    <p style="margin: 0; color: #fff;">"My core teaching philosophy centers on moving from <strong class="highlight">i to i + 1</strong>. No matter your baseline, we take the next logical step forward."</p>
                 </div>
+
+                <h3 style="margin: 24px 0 12px; font-size: 1.1rem;">The "i to i + 1" Philosophy</h3>
+                <p>Tutoring isn't one-size-fits-all. The <strong>i to i + 1</strong> approach means I meet you exactly where your current understanding is (<em>i</em>), and we build your skills systematically to the next level (<em>i + 1</em>). Whether you are struggling with basic algebra limits or mastering multivariable vector calculus, the progression is 100% personalized to your pace. No skipping steps, no leaving you confused.</p>
 
                 <h3 style="margin: 24px 0 12px; font-size: 1.1rem;">Academic Background</h3>
                 <div class="list-item">
@@ -391,26 +434,43 @@
                 </div>
 
                 <h3 style="margin: 24px 0 12px; font-size: 1.1rem;">Beyond The Numbers</h3>
-                <p>Discipline in the mind requires discipline in the body. Focused on physical mastery through Calisthenics, B-Boying, and Functional Strength Training.</p>
+                <p>Discipline in the mind requires discipline in the body. I focus heavily on physical mastery through Calisthenics, B-Boying, and Functional Strength Training. Why does this matter for math?</p>
+                <p>Because high-level calculus requires mental endurance and a high frustration tolerance. I bring the concept of "progressive overload" from physical training directly into our math sessions—systematically building your analytical endurance so you don't panic or burn out during a 3-hour marathon final exam.</p>
             </section>
 
             <section id="view-courses" class="view-section">
                 <h2>Packages & Rates</h2>
-                <p>Select a program designed to match your immediate academic urgency. All prices are net.</p>
+                <p>Select a roadmap designed to match your immediate academic urgency. All prices are net in THB.</p>
 
                 <div class="accordion">
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title">🧭 Step 0: Free Assessment</div>
+                            <div class="accordion-price">0 THB</div>
+                        </div>
+                        <div class="accordion-content">
+                            <p style="margin-top: 10px; font-size: 0.8rem;">Before you commit to a package, let's map the battlefield together.</p>
+                            <ul>
+                                <li>30-minute live Zoom consultation.</li>
+                                <li>Diagnostic review of your current syllabus and past quizzes.</li>
+                                <li>Identify exactly where the Stewart textbook is tripping you up.</li>
+                                <li>Creation of a customized "i to i + 1" tutoring roadmap.</li>
+                            </ul>
+                        </div>
+                    </div>
                     
                     <div class="accordion-item">
                         <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <div class="accordion-title">🚨 The "Midterm Rescue"</div>
-                            <div class="accordion-price">5,000 THB / Course</div>
+                            <div class="accordion-title">🚨 Quick Sprint</div>
+                            <div class="accordion-price">5,000 THB</div>
                         </div>
                         <div class="accordion-content">
-                            <p style="margin-top: 10px; font-size: 0.8rem;">For university freshmen who just failed their first Calc I/II quiz and need an immediate turnaround.</p>
+                            <p style="margin-top: 10px; font-size: 0.8rem;">The "Midterm Rescue" (4 Hours). For university freshmen needing an immediate exam turnaround.</p>
                             <ul>
-                                <li>4 intensive hours of 1-on-1 tutoring.</li>
-                                <li>Focus purely on the exact Stewart chapters for your upcoming exam.</li>
-                                <li>Targeted breakdown of common algebra traps (Stewart's blue boxes).</li>
+                                <li>Emergency 1-on-1 cramming sessions.</li>
+                                <li>Focus purely on the exact Stewart chapters for your upcoming test.</li>
+                                <li>Targeted breakdown of common algebra traps.</li>
                                 <li>Mock test simulation using Stewart's end-of-chapter reviews.</li>
                             </ul>
                         </div>
@@ -418,33 +478,47 @@
 
                     <div class="accordion-item">
                         <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <div class="accordion-title">🎯 The "AP 5 Blueprint"</div>
-                            <div class="accordion-price">1,200 THB / Hour</div>
+                            <div class="accordion-title">⚡ Short Term</div>
+                            <div class="accordion-price">11,500 THB</div>
                         </div>
                         <div class="accordion-content">
-                            <p style="margin-top: 10px; font-size: 0.8rem;">For international high school students taking AP Calculus AB/BC aiming for a perfect score.</p>
+                            <p style="margin-top: 10px; font-size: 0.8rem;">The "Topic Master" (10 Hours). Best for conquering a specific, heavy module block.</p>
                             <ul>
-                                <li>Pay-as-you-go or book in 10-hour blocks.</li>
-                                <li>Weekly sessions perfectly mirroring your school's syllabus.</li>
-                                <li>Steady progression through Stewart Chapters 1-11.</li>
-                                <li>Focus on Tier 2 (Optimization) & Tier 3 textbook problems.</li>
-                                <li>Long-term GPA stability leading up to May AP exams.</li>
+                                <li>Deep dive into notoriously hard sections (e.g., Integration Techniques, Infinite Series, or Vector Calculus).</li>
+                                <li>Tackle Tier 2 (Optimization) and Tier 3 applied textbook problems.</li>
+                                <li>Includes asynchronous Q&A support via LINE for homework help.</li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="accordion-item">
                         <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <div class="accordion-title">💎 VIP Homework Lifeline</div>
-                            <div class="accordion-price">4,000 THB / Month</div>
+                            <div class="accordion-title">🛡️ Medium Term</div>
+                            <div class="accordion-price">22,000 THB</div>
                         </div>
                         <div class="accordion-content">
-                            <p style="margin-top: 10px; font-size: 0.8rem;">Ultimate convenience and continuous support for students across different time zones.</p>
+                            <p style="margin-top: 10px; font-size: 0.8rem;">The "Semester Shield" (20 Hours). Consistent, weekly support to guarantee a strong GPA.</p>
                             <ul>
-                                <li>Includes one (1) live digital whiteboard 1-on-1 session per week.</li>
-                                <li>24/7 Asynchronous Q&A support via personal LINE chat.</li>
-                                <li>Send photos of stuck Stewart problems during the week.</li>
-                                <li>Receive guided hints, stepped solutions, and concept corrections on demand.</li>
+                                <li>Weekly pacing perfectly aligned with your university or high school syllabus.</li>
+                                <li>Continuous gap-filling of previous math foundations.</li>
+                                <li>Midterm and Final exam intensive prep included.</li>
+                                <li>Priority scheduling and 24/7 LINE support.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title">🏆 Long-Term Marathon</div>
+                            <div class="accordion-price">40,000 THB</div>
+                        </div>
+                        <div class="accordion-content">
+                            <p style="margin-top: 10px; font-size: 0.8rem;">The "A-Grade Blueprint" (40 Hours). The ultimate long-term academic partnership.</p>
+                            <ul>
+                                <li>Complete A-to-Z mastery of Stewart Calculus Early Transcendentals.</li>
+                                <li>Designed for AP Calculus AB/BC students starting in August, or freshmen ensuring a 4.0.</li>
+                                <li>Builds extreme analytical endurance for top-tier university admissions.</li>
+                                <li>Unlimited asynchronous LINE support and priority homework review.</li>
                             </ul>
                         </div>
                     </div>
